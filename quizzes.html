@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz 1: HTML Basics</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <header>
+        <h1>Quiz 1: HTML Basics</h1>
+    </header>
+    <main>
+        <form id="quizForm">
+            <div class="question">
+                <p>1. What does HTML stand for?</p>
+                <input type="radio" name="q1" value="a"> Home Tool Markup Language<br>
+                <input type="radio" name="q1" value="b"> HyperText Markup Language<br>
+                <input type="radio" name="q1" value="c"> Hyperlinks and Text Markup Language<br>
+            </div>
+            <div class="question">
+                <p>2. Who is making the Web standards?</p>
+                <input type="radio" name="q2" value="a"> Mozilla<br>
+                <input type="radio" name="q2" value="b"> Microsoft<br>
+                <input type="radio" name="q2" value="c"> The World Wide Web Consortium<br>
+            </div>
+            <button type="button" onclick="submitQuiz()">Submit Quiz</button>
+        </form>
+        <div id="quizResult"></div>
+        <button onclick="window.location.href='../index.html'">Back to Home</button>
+    </main>
+    <footer>
+        <p>&copy; 2024 HTML Hero. All rights reserved.</p>
+    </footer>
+    <script>
+        function submitQuiz() {
+            const form = document.getElementById('quizForm');
+            const result = document.getElementById('quizResult');
+            let score = 0

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Hero</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>HTML Hero: Interactive HTML Learning Hub</h1>
+        <nav>
+            <ul>
+                <li><a href="#tutorials">Tutorials</a></li>
+                <li><a href="#editor">Live Code Editor</a></li>
+                <li><a href="#quizzes">Quizzes</a></li>
+                <li><a href="#projects">Mini-Projects</a></li>
+                <li><a href="#profile">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="tutorials">
+            <h2>Interactive Tutorials</h2>
+            <div class="tutorial">
+                <h3>Lesson 1: Introduction to HTML</h3>
+                <p>Learn the basics of HTML structure, elements, and attributes.</p>
+                <button onclick="startTutorial(1)">Start Tutorial</button>
+            </div>
+            <div class="tutorial">
+                <h3>Lesson 2: Basic HTML Tags</h3>
+                <p>Learn about common HTML tags such as headings, paragraphs, and links.</p>
+                <button onclick="startTutorial(2)">Start Tutorial</button>
+            </div>
+            <div class="tutorial">
+                <h3>Lesson 3: Forms and Inputs</h3>
+                <p>Learn how to create forms and handle user input in HTML.</p>
+                <button onclick="startTutorial(3)">Start Tutorial</button>
+            </div>
+        </section>
+        <section id="editor">
+            <h2>Live Code Editor</h2>
+            <textarea id="code" placeholder="Write your HTML code here..."></textarea>
+            <button onclick="runCode()">Run Code</button>
+            <iframe id="output"></iframe>
+        </section>
+        <section id="quizzes">
+            <h2>Quizzes</h2>
+            <p>Test your knowledge with our interactive quizzes.</p>
+            <button onclick="startQuiz(1)">Start Quiz 1</button>
+        </section>
+        <section id="projects">
+            <h2>Mini-Projects</h2>
+            <p>Apply your knowledge in real-world projects.</p>
+            <button onclick="startProject(1)">Start Project 1</button>
+        </section>
+        <section id="profile">
+            <h2>User Profile</h2>
+            <p>Track your progress and achievements.</p>
+            <!-- Add profile information and progress tracking -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 HTML Hero. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
